@@ -107,14 +107,15 @@ def process_order(request):
 
     # Envoyer le PDF par email à l'administrateur
     buffer.seek(0)
-    email = EmailMessage(
-        'Nouvelle commande',
-        'Une nouvelle commande a été passée. Veuillez trouver les détails en pièce jointe.',
-        settings.DEFAULT_FROM_EMAIL,
-        [settings.ADMIN_EMAIL],
+    send_mail(
+        'Nouvelle commande',                     # Sujet de l'email
+        f'Une nouvelle commande a été passée par {request.user.username}.',  # Message de l'email
+        'mohamedkoureissy7@gmail.com',                  # Email de l'expéditeur
+        [settings.ADMIN_EMAIL],                  # Liste des destinataires
+        fail_silently=False,                     # Ne pas ignorer les exceptions
     )
-    email.attach('commande.pdf', buffer.getvalue(), 'application/pdf')
-    email.send()
+    # email.attach('commande.pdf', buffer.getvalue(), 'application/pdf')
+    # email.send()
 
     # Télécharger le PDF pour le client
     buffer.seek(0)
@@ -164,3 +165,9 @@ def register(request):
     else:
         form = SignUpForm()
     return render(request, 'registration/register.html', {'form': form})
+
+def privacy_policy(request):
+    return render(request, 'privacy_policy.html')
+
+def terms_of_service(request):
+    return render(request, 'terms_of_service.html')

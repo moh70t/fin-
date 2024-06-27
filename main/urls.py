@@ -1,9 +1,11 @@
 from django.urls import include, path 
-from .views import index, process_order, product, about, contact, add_to_cart, cart_detail, checkout, product_list, register
+from .views import index, process_order, product, about, contact, add_to_cart, cart_detail, checkout, product_list, register, terms_of_service, privacy_policy
 
 urlpatterns = [
     path('', index, name='index'),
     # path('product/', product, name='product'),
+    path('terms_of_service/', terms_of_service, name='terms_of_service'),
+    path('privacy_policy/', privacy_policy, name='privacy_policy'),
     path('product_list/', product_list, name='product_list'),
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),

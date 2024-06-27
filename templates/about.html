@@ -1,8 +1,89 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}A propos de Nous{% endblock %}
 
 {% block content %}
-    <h2>Welcome to About</h2>
-    <p>We offer the best products for you.</p>
+<section class="about-hero text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4"><b>Bienvenue chez Anka Wosso</b></h1>
+        <p class="lead">Nous transformons les meilleures patates douces en chips délicieuses et croquantes.</p>
+    </div>
+</section>
+
+<section class="about-us py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">À propos de Anka Wosso</h2>
+        <div class="row">
+            <div class="col-md-6 align-items-center">
+                <p>Chez Anka Wosso, nous nous engageons à offrir les meilleurs produits de patate douce. Fondée au cœur du Mali, notre usine utilise des méthodes de transformation innovantes pour produire des chips de patate douce savoureuses et nutritives. Nous travaillons avec des agriculteurs locaux pour garantir la fraîcheur et la qualité de nos produits.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'img/about-us.jpg' %}" class="img-fluid rounded" alt="À propos de nous">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-mission py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Notre Mission</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'img/mission.jpg' %}" class="img-fluid rounded" alt="Notre Mission">
+            </div>
+            <div class="col-md-6 ">
+                <p>Notre mission est de transformer les ressources locales en produits de haute qualité, tout en soutenant l'économie locale et en promouvant des pratiques agricoles durables. Nous croyons en la puissance de la patate douce pour fournir une nutrition essentielle et nous nous efforçons de créer des produits délicieux que tout le monde peut apprécier.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-values py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nos Valeurs</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="{% static 'img/quality.jpg' %}" class="img-fluid rounded mb-3" alt="Qualité">
+                <h3>Qualité</h3>
+                <p>Nous nous engageons à fournir des produits de la plus haute qualité en utilisant les meilleures pratiques de transformation.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{% static 'img/sustainability.jpg' %}" class="img-fluid rounded mb-3" alt="Durabilité">
+                <h3>Durabilité</h3>
+                <p>Nous promouvons des pratiques agricoles durables pour protéger notre planète et soutenir nos communautés locales.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{% static 'img/community.jpg' %}" class="img-fluid rounded mb-3" alt="Communauté">
+                <h3>Communauté</h3>
+                <p>Nous travaillons en étroite collaboration avec les agriculteurs et les communautés locales pour assurer un impact positif.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-us py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+        <p class="text-center">Vous avez des questions ou souhaitez en savoir plus sur nos produits? N'hésitez pas à nous contacter.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Votre Nom">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Votre Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" placeholder="Votre Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

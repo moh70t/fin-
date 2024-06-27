@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -141,11 +143,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # # Email backend configuration
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Remplace par ton adresse email
-# EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Remplace par ton mot de passe d'email
-# DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')  # Remplace par ton adresse email
-
+ADMIN_EMAIL = 'koureissym@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Remplace par ton adresse email
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Remplace par ton mot de passe d'email
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')  # Remplace par ton adresse email

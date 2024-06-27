@@ -12,48 +12,54 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="#">
-            {% load static %}
-            <img src="{% static 'img/logo.png' %}" alt="" height="150px" width="150px">
-        </a>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="{% url 'index' %}">Accueil</a></li>
-                <li><a class="nav-link" href="{% url 'product_list' %}">Nos produits</a></li>
-                <li><a class="nav-link" href="{% url 'about' %}">A propos de Nous</a></li>
-                <li><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
-                <li>
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cartModal">Panier</a>
-                </li>
-
-                {% if user.is_authenticated %}
-
-                <li class="nav-item">
-                    <span class="navbar-text">Hello, {{ user.first_name }} {{ user.last_name }}</span>
-                </li>
-
-                <li class="nav-item">
-                    <form method="post" action="{% url 'logout' %}">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-link nav-link" style="display: inline; padding: 0; margin: 0;">Logout</button>
-                    </form>
-                </li>
-
-                {% else %}
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'login' %}">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'register' %}">Sign Up</a>
-                    </li>
-
-                {% endif %}
-
-            </ul>
-        </nav>
-            </div>
+    <header class="sticky-top shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'img/logo.png' %}" alt="Anka Wosso Logo" height="50" width="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'product_list' %}">Nos produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">À propos de nous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">Panier</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <span class="navbar-text"><b>Hello, {{ user.first_name }} {{ user.last_name }}</b></span>
+                        </li>
+                        <li class="nav-item">
+                            <form method="post" action="{% url 'logout' %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-link nav-link" style="display: inline; padding: 0; margin: 0;">Logout</button>
+                            </form>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'register' %}">Sign Up</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div id="overlay"></div>
     </header>
     <main>
@@ -96,9 +102,38 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer>
-        <p>&copy; 2024 An ka Wosso. All rights reserved.</p>
-    </footer>
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h3><b>An ka Wosso</b></h3>
+                    <p>Nous transformons les meilleures patates douces en chips délicieuses et croquantes.</p>
+                    <p><a href="{% url 'about' %}" >À propos de Nous</a></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3><b>Liens Utiles</b></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'index' %}" >Accueil</a></li>
+                        <li><a href="{% url 'product_list' %}" >Nos Produits</a></li>
+                        <li><a href="{% url 'contact' %}" >Contact</a></li>
+                        <li><a href="#" class="text-white" data-toggle="modal" data-target="#cartModal">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3><b>Informations Légales</b></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'terms_of_service' %}" >Terms of Service</a></li>
+                        <li><a href="{% url 'privacy_policy' %}" >Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mt-3">&copy; 2024 An ka Wosso. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
 </body>
 
 <script>

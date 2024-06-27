@@ -17,12 +17,12 @@ body {
 }
 
 #overlay {
-    background-color: rgba(179, 177, 177, 0.469); /* Blanc mais pas trop opaque */
+    background-color: rgba(245, 201, 82, 0.469); /* Blanc mais pas trop opaque */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 190px;
+    height: 165px;
     z-index: 0;
 }
 
@@ -38,6 +38,15 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+.cards {
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cardss {
+    border-radius: 20px!important;
 }
 
 header a{
@@ -91,14 +100,32 @@ main {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    font-weight: bold;
-    padding: 1rem;
-    bottom: 0;
-    width: 100%;
+    background-color: var(--primary-color)!important;
+    color: var(--secondary-color)!important;
 }
+
+footer a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color)!important;
+    text-decoration: none!important;
+    padding: 5px;
+}
+
+footer a:hover {
+    background-color: #dddddd71;
+    color: inherit;
+    border-radius: 15px;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+}
+
+footer p, footer ul {
+    margin-bottom: 0;
+}
+
 
 .product-card {
     background-color: #f9f9f9;
@@ -120,4 +147,39 @@ footer {
 
 .product-card p {
     margin: 0.5rem 0;
+}
+
+.about-hero {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+section img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.our-values .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.colorUni {
+    background-color: var(--primary-color);
+    border-radius: 20px!important;
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: 100px;
 }
