@@ -9,6 +9,3 @@ def multiply(value, arg):
     except (ValueError, TypeError):
         return ''
 
-@register.filter(name='sum')
-def sum_filter(queryset, attribute):
-    return sum(getattr(item, attribute) for item in queryset)

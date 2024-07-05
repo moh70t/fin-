@@ -6,8 +6,8 @@
         <li>
             <h2>{{ item.product.name }}</h2>
             <p>Quantity: {{ item.quantity }}</p>
-            <p>Price: ${{ item.product.price }}</p>
-            <p>Total: ${{ item.quantity|multiply:item.product.price }}</p>
+            <p>Price: FCFA{{ item.product.price }}</p>
+            <p>Total: FCFA{{ item.quantity|multiply:item.product.price }}</p>
         </li>
     {% endfor %}
 </ul>
