@@ -129,6 +129,12 @@ LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 
 
+# Configuration des fichiers statiques pour Heroku
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
