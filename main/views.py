@@ -192,3 +192,6 @@ def terms_of_service(request):
 
 def geolocalisations(request):
     return render(request, 'geolocalisations.html')
+
+def media(request):
+    return render(request, 'media.html')

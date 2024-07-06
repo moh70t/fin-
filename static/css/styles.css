@@ -8,9 +8,18 @@
     --box-sizing: border-box;
 }
 
+@media (max-width: 576px) {
+    .title {
+        color: var(--primary-color);
+    }
+}
+
+main {
+    background-color: burlywood;
+}
+
 body {
     font-family: Arial, sans-serif;
-    color: var(--secondary-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;

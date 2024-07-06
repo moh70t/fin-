@@ -1,0 +1,1021 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "main",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "main",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "main",
+        "model": "cartproduct"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6dk76lvxfk1wfzns1ujdo0y9vkis83x8",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hA6hQIu3fcMzQwzStVAUtqV8e7apAvd_vfef6kJtzVPW5NlmlmdVVCn340wPaTsgO9YblWnWtZlJr0r-qBNj5XleTncv4OMLX_rHimhA7l6YwicHZKJGJPvkYNlS9A5Y8AhegM82AAYBFwXSEAoJlLvD-ZON-Y:1sP7gX:oOi8Qpc_fQ31FE-RG5c1qnOAiO43J9gM2Q1ka3vjlYo",
+        "expire_date": "2024-07-17T21:38:41.024Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6xndjehskqf1z17dxmm98pcha16207hj",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hA6hQIu3fcMzQwzStVAUtqV8e7apAvd_vfef6kJtzVPW5NlmlmdVVCn340wPaTsgO9YblWnWtZlJr0r-qBNj5XleTncv4OMLX_rHimhA7l6YwicHZKJGJPvkYNlS9A5Y8AhegM82AAYBFwXSEAoJlLvD-ZON-Y:1sPndD:JHZGZ5OswSWYKnyTPixJ3G0_fxXuwQavLW_PIX_TfzA",
+        "expire_date": "2024-07-19T18:26:03.809Z"
+    }
+},
+{
+    "model": "main.product",
+    "pk": 5,
+    "fields": {
+        "name": "Chips �pic�es",
+        "description": "Croquantes et savoureuses, nos chips de patate douce �pic�es sont pr�par�es avec un m�lange d'�pices exotiques qui raviront vos papilles. Parfaites pour les amateurs de sensations fortes, ces chips apportent une touche piquante � vos collations.",
+        "price": "500.00",
+        "weight": "100 g"
+    }
+},
+{
+    "model": "main.product",
+    "pk": 6,
+    "fields": {
+        "name": "Chips Non �pic�es",
+        "description": "Nos chips de patate douce nature sont id�ales pour ceux qui pr�f�rent la simplicit� et la puret� des ingr�dients naturels. Avec leur go�t l�g�rement sucr� et leur texture croquante, elles constituent une collation saine et d�licieuse.",
+        "price": "500.00",
+        "weight": "100 g"
+    }
+},
+{
+    "model": "main.product",
+    "pk": 7,
+    "fields": {
+        "name": "Farine de Patate Douce Naturelle",
+        "description": "Obtenue � partir de patates douces rigoureusement s�lectionn�es, notre farine de patate douce naturelle est riche en fibres et en nutriments. Elle est parfaite pour toutes vos recettes de pain, p�tisseries et autres pr�parations culinaires.",
+        "price": "700.00",
+        "weight": "500g"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add product",
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change product",
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete product",
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view product",
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add cart",
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change cart",
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view cart",
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add cart product",
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "codename": "add_cartproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change cart product",
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "codename": "change_cartproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete cart product",
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "codename": "delete_cartproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view cart product",
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "codename": "view_cartproduct"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$gNC2uUP9gx5Bge1wtyy5Vh$xcUhgV6ekRer+H5sKBF8cNcVtofURhGsBAeULTZ8X/k=",
+        "last_login": "2024-06-21T23:01:49.350Z",
+        "is_superuser": false,
+        "username": "Mohamed",
+        "first_name": "Mohamed",
+        "last_name": "Koureissy",
+        "email": "koureissym@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T16:02:37Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$pQRKJcGzzCXghtxWMitcHY$WrB+3ZyOw617gvnAKogAXzo7FrQg3q1U9JZGq3Pmfyg=",
+        "last_login": "2024-06-21T22:42:13.330Z",
+        "is_superuser": true,
+        "username": "mohamed",
+        "first_name": "",
+        "last_name": "",
+        "email": "koureissym@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-06-21T16:23:40.479Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$4XM3W9AFoFXlGNDPAquXON$1z1gKRENJawoidNNLXSJAIkc4n3fJT6LWxFqeGMNtTI=",
+        "last_login": "2024-06-21T21:56:01.577Z",
+        "is_superuser": false,
+        "username": "Moodk",
+        "first_name": "",
+        "last_name": "",
+        "email": "mohamedkoureissy7@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T21:55:56.209Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$vmgahcIIL4zRNwlENGY2x3$aoRbfsk2btTSwt3P5Tt7n1jB5CWJXqPKyFqyE79fymk=",
+        "last_login": "2024-06-21T22:13:06.384Z",
+        "is_superuser": false,
+        "username": "test",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@comtest.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T22:13:00.507Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$cHjjGlhmz0gRJLu7noZLVQ$z9V6RYFtZ7s4qJuD3vNQFNdvaMwKTLSni5XMcC20fj0=",
+        "last_login": "2024-06-21T23:08:50.194Z",
+        "is_superuser": false,
+        "username": "Ami",
+        "first_name": "COULIBALY",
+        "last_name": "Binta",
+        "email": "binta@coulibaly.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-21T22:20:10.886Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$FaeLMbJgmop5CB3XU3dYrW$f8VGND71p+UQfONN3VMSdiFxT++O1RLC51d3cpT4h2Q=",
+        "last_login": "2024-06-28T22:18:47.513Z",
+        "is_superuser": false,
+        "username": "Mami",
+        "first_name": "mam",
+        "last_name": "mim",
+        "email": "mimama@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-06-26T11:29:37.631Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IahasBrOTbvwmpaT3eDF3N$UZPbYRRnNOly/eSqJyjBW64xZB4Mai9rVyQclsRBUwI=",
+        "last_login": "2024-07-03T21:04:20.777Z",
+        "is_superuser": false,
+        "username": "moriba00@icloud.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "moribasamake1234@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-02T11:02:50.983Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$5BAL0HlrtBEDHJKoasMlSB$3+rZa3MUf4iu/E1smHMBIP6kuZ6vKXH/bYo1T7t+15s=",
+        "last_login": "2024-07-05T18:26:03.796Z",
+        "is_superuser": true,
+        "username": "papa",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-07-03T21:37:29.255Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "main.cart",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "Mami"
+        ]
+    }
+},
+{
+    "model": "main.cart",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "moriba00@icloud.com"
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-06-21T22:44:21.813Z",
+        "user": [
+            "mohamed"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "Mohamed",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-07-03T21:39:37.061Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "object_id": "3",
+        "object_repr": "2 x Farine de Patate Douce Sucr�e in Cart for Mami",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-07-03T21:39:37.071Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "cartproduct"
+        ],
+        "object_id": "1",
+        "object_repr": "2 x Chips �pic�es in Cart for Mami",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-07-03T21:50:29.420Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Farine de Patate Douce Sucr�e",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-07-03T21:50:29.441Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "Farine de Patate Douce Sucr�e",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-07-03T21:50:29.447Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-07-03T21:50:29.447Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Chips Non �pic�es",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-07-03T21:50:29.464Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Chips �pic�es",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-07-03T21:57:37.877Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\", \"Categorie\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-07-03T21:58:04.512Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "Chips Non �pic�es",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\", \"Categorie\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-07-03T21:58:26.047Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "Chips �pic�es",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\", \"Categorie\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-07-03T21:58:45.731Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-07-04T21:47:59.959Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\", \"Weight\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-07-04T21:48:27.829Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "Chips Non �pic�es",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Weight\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-07-04T21:48:38.286Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "Chips �pic�es",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Weight\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-07-04T21:49:37.733Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-07-04T21:50:04.373Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-07-04T21:50:09.479Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "Farine de Patate Douce Naturelle",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-07-04T21:50:15.032Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "Chips Non �pic�es",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-07-04T21:50:18.499Z",
+        "user": [
+            "papa"
+        ],
+        "content_type": [
+            "main",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "Chips �pic�es",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}
+]

@@ -10,18 +10,33 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places&callback=initMap" async defer></script>
     <script>
+        var map;
+        var directionsService;
+        var directionsRenderer;
+        var ankaWosso = {lat: 12.6900, lng: -8.0300};  // Coordonnées spécifiques d'Anka Wosso à Sankoroba
+        var otherLocation = {lat: 12.521420, lng: -7.920744};  // Nouvelle localisation ajoutée
+
         function initMap() {
-            var ankaWosso = {lat: 12.6900, lng: -8.0300};  // Coordonnées spécifiques d'Anka Wosso à Sankoroba
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
                 center: ankaWosso
             });
 
-            var marker = new google.maps.Marker({
+            new google.maps.Marker({
                 position: ankaWosso,
                 map: map,
                 title: 'Anka Wosso'
             });
+
+            new google.maps.Marker({
+                position: otherLocation,
+                map: map,
+                title: 'Autre Localisation'
+            });
+
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.setMap(map);
 
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
@@ -30,21 +45,8 @@
                         lng: position.coords.longitude
                     };
 
-                    var directionsService = new google.maps.DirectionsService();
-                    var directionsRenderer = new google.maps.DirectionsRenderer();
-                    directionsRenderer.setMap(map);
-
-                    var request = {
-                        origin: userLocation,
-                        destination: ankaWosso,
-                        travelMode: 'DRIVING'
-                    };
-
-                    directionsService.route(request, function(result, status) {
-                        if (status == 'OK') {
-                            directionsRenderer.setDirections(result);
-                        }
-                    });
+                    // Save the user location for later use
+                    window.userLocation = userLocation;
                 }, function() {
                     handleLocationError(true, map.getCenter());
                 });
@@ -53,16 +55,45 @@
             }
         }
 
+        function calculateRoute(destination) {
+            if (!window.userLocation) {
+                alert("Votre position n'a pas pu être déterminée.");
+                return;
+            }
+
+            var request = {
+                origin: window.userLocation,
+                destination: destination,
+                travelMode: 'DRIVING'
+            };
+
+            directionsService.route(request, function(result, status) {
+                if (status == 'OK') {
+                    directionsRenderer.setDirections(result);
+                } else {
+                    alert('Erreur lors du calcul de l\'itinéraire : ' + status);
+                }
+            });
+        }
+
         function handleLocationError(browserHasGeolocation, pos) {
             alert(browserHasGeolocation ? 'Erreur: Le service de géolocalisation a échoué.' : 'Erreur: Votre navigateur ne supporte pas la géolocalisation.');
         }
     </script>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <main>
         <section class="map-section">
             <h1>Localisation de Anka Wosso</h1>
-            <div id="map" style="height: 500px; width: 100%;"></div>
+            <div id="map"></div>
+            <button onclick="calculateRoute(ankaWosso)">Obtenir un itinéraire vers Anka Wosso</button>
+            <button onclick="calculateRoute(otherLocation)">Obtenir un itinéraire vers l'autre localisation</button>
         </section>
     </main>
 </body>
